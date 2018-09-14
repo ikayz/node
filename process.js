@@ -27,6 +27,7 @@ function ask(i) {
     process.stdout.write(" > ");
 }
 
+// process.stdin and process.stdout are ways of communicating with the process
 process.stdin.on('data', function(data) {
     res.push(data.toString().trim());
 
